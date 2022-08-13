@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 120vh;
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.navbar {
+    display: grid;
+    grid-template-columns: 170px 60px 5fr 1fr;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px 20px 40px;
+}
+
+.navbar>div {
+    align-self: center;
+}
+
+.line {
+    border-left: 1px solid #fff;
+    height: 50px;
+}
+
+.navbar>div:first-child {
+    width: 90px;
+}
+
+.navbar>div:last-child {
+    justify-self: end
+}
+
+.grow-list {
+    justify-self: start;
+}
+
+ul.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding: 0;
+    grid-column-gap: 50px;
+}
+
+/* ------------------------------ */
+/* ---------- Context ------------ */
+/* ------------------------------ */
+.hero-section {
+    background: url('./assets/bg.png') no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1.hero-heading {
+    font-size: 65px;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+/* ------------------------------ */
+/* ---------- Button ------------ */
+/* ------------------------------ */
+button {
+    background: #ba0cc5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    appearance: none;
+    border-radius: 4px;
+}
+
+.nav-button.btn {
+    padding: 26px 52px;
+}
+
+.button-large {
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.button-small {
+    padding: 10px 20px;
+}
